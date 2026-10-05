@@ -1,0 +1,882 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Siddhesh Capital Market Services Private Limited</title>
+  <meta name="description" content="Siddhesh Capital Market Services Private Limited — Commercial credit and capital facilities since 1995. Based at Nariman Point, Mumbai with ₹74.85 Cr paid-up equity." />
+  
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            brand: {
+              dark: '#07080c',
+              emerald: '#10b981',
+              gold: '#f59e0b',
+            }
+          },
+          fontFamily: {
+            heading: ['Helvetica Neue', 'Arial', 'sans-serif'],
+            body: ['Helvetica Neue', 'Arial', 'sans-serif'],
+          }
+        }
+      }
+    }
+  </script>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body class="bg-[#07080c] text-white selection:bg-emerald-500 selection:text-black font-body overflow-x-hidden relative min-h-screen">
+
+  <!-- Ambient Glowing Background Orbs -->
+  <div class="fixed inset-0 pointer-events-none z-0 overflow-hidden" aria-hidden="true">
+    <div class="absolute top-[-10%] left-[20%] w-[550px] h-[550px] rounded-full bg-emerald-500/[0.05] blur-[140px] animate-float-slow"></div>
+    <div class="absolute top-[35%] right-[-5%] w-[600px] h-[600px] rounded-full bg-blue-500/[0.04] blur-[150px] animate-float-alt"></div>
+    <div class="absolute bottom-[20%] left-[-10%] w-[650px] h-[650px] rounded-full bg-amber-500/[0.03] blur-[160px] animate-float-slow"></div>
+    <div class="absolute inset-0 opacity-[0.015] bg-grid"></div>
+  </div>
+
+  <!-- Top Navigation Header -->
+  <header class="fixed top-0 left-0 right-0 w-full z-40 px-4 sm:px-8 py-3.5 flex justify-between items-center backdrop-blur-xl bg-black/75 border-b border-white/10 transition-all">
+    <div class="flex items-center gap-3">
+      <a href="#" class="flex items-center gap-2 cursor-pointer group">
+        <span class="text-lg sm:text-xl font-bold tracking-tight text-white group-hover:text-emerald-400 transition-colors">
+          SIDDHESH CAPITAL
+        </span>
+        <span class="text-amber-400 text-xl leading-none select-none">&#10035;&#xFE0E;</span>
+        <span class="hidden md:inline-block text-[10px] text-neutral-400 font-mono pl-1 border-l border-white/20">
+          Est. 1995 &bull; Nariman Point
+        </span>
+      </a>
+    </div>
+
+    <!-- Desktop Navigation Links -->
+    <nav class="hidden lg:flex items-center text-xs sm:text-sm text-neutral-300 font-medium tracking-tight gap-1">
+      <a href="#calculator" class="text-emerald-400 hover:text-emerald-300 hover:bg-white/5 transition-all px-3 py-1.5 rounded-lg flex items-center gap-1.5">
+        <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 7h6m0 10v-3m-3 3h.01M9 17h.01M9 14h.01M12 14h.01M15 11h.01M12 11h.01M9 11h.01M7 21h10a2 2 0 002-2V5a2 2 0 00-2-2H7a2 2 0 00-2 2v14a2 2 0 002 2z"/></svg>
+        <span>Calculator</span>
+      </a>
+      <a href="#facilities" class="hover:text-white hover:bg-white/5 transition-all px-3 py-1.5 rounded-lg">Facilities</a>
+      <a href="#capital" class="hover:text-white hover:bg-white/5 transition-all px-3 py-1.5 rounded-lg">Capital &amp; Board</a>
+      <a href="#market-intelligence" class="hover:text-white hover:bg-white/5 transition-all px-3 py-1.5 rounded-lg flex items-center gap-1">
+        <svg class="w-3.5 h-3.5 text-blue-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/></svg>
+        <span>Market Search</span>
+      </a>
+      <a href="#location" class="hover:text-white hover:bg-white/5 transition-all px-3 py-1.5 rounded-lg flex items-center gap-1">
+        <svg class="w-3.5 h-3.5 text-emerald-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c-1.657 0-3 1.343-3 3 0 2.25 3 6 3 6s3-3.75 3-6c0-1.657-1.343-3-3-3z"/><circle cx="12" cy="11" r="1"/></svg>
+        <span>Nariman Pt. HQ</span>
+      </a>
+      <a href="#contact" class="hover:text-white hover:bg-white/5 transition-all px-3 py-1.5 rounded-lg">Contact Desk</a>
+    </nav>
+
+    <!-- Header Actions -->
+    <div class="flex items-center gap-2 sm:gap-3">
+      <a href="tel:09919805234" class="hidden sm:inline-flex items-center gap-1.5 text-xs text-neutral-300 hover:text-white bg-white/5 hover:bg-white/10 px-3 py-1.5 rounded-lg border border-white/10 transition-colors font-mono">
+        <svg class="w-3 h-3 text-emerald-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/></svg>
+        <span>099198 05234</span>
+      </a>
+
+      <button id="navApplyBtn" class="flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-white text-black hover:bg-neutral-200 text-xs font-semibold transition-colors cursor-pointer shadow-md">
+        <span>Apply Now</span>
+      </button>
+
+      <!-- Mobile Hamburger Button -->
+      <button id="mobileMenuBtn" class="lg:hidden flex flex-col justify-center items-center w-8 h-8 gap-[5px] focus:outline-none cursor-pointer" aria-label="Toggle navigation menu">
+        <span class="w-5 h-[2px] bg-white transition-all"></span>
+        <span class="w-5 h-[2px] bg-white transition-all"></span>
+        <span class="w-5 h-[2px] bg-white transition-all"></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer Menu -->
+  <div id="mobileDrawer" class="fixed inset-0 bg-black/95 backdrop-blur-2xl flex flex-col justify-between px-6 py-8 transition-all duration-300 z-50 lg:hidden overflow-y-auto hidden">
+    <div class="space-y-6">
+      <div class="flex items-center justify-between border-b border-white/10 pb-4">
+        <div>
+          <div class="flex items-center gap-2 text-white font-bold text-base">
+            <span>SIDDHESH CAPITAL</span>
+            <span class="text-amber-400">&#10035;&#xFE0E;</span>
+          </div>
+          <p class="text-[11px] text-neutral-400 font-mono mt-0.5">
+            CIN: U65923MH1995PTC088811 &bull; RoC-Mumbai
+          </p>
+        </div>
+        <button id="closeDrawerBtn" class="p-2 rounded-full text-neutral-400 hover:text-white hover:bg-white/10">
+          <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/></svg>
+        </button>
+      </div>
+
+      <nav class="flex flex-col gap-3 text-base font-medium text-white">
+        <a href="#calculator" class="mobile-link text-left py-2.5 px-3 rounded-xl bg-emerald-500/10 text-emerald-400 flex items-center justify-between">
+          <span>Loan &amp; EMI Calculator</span>
+          <span class="text-[10px] font-mono bg-emerald-500/20 px-2 py-0.5 rounded text-emerald-300">Live</span>
+        </a>
+        <a href="#facilities" class="mobile-link text-left py-2.5 px-3 rounded-xl hover:bg-white/5 flex items-center justify-between">
+          <span>Credit Facilities</span>
+          <span class="text-xs font-mono text-neutral-400">NIC 6592</span>
+        </a>
+        <a href="#capital" class="mobile-link text-left py-2.5 px-3 rounded-xl hover:bg-white/5 flex items-center justify-between">
+          <span>Capital &amp; Board</span>
+          <span class="text-xs font-mono text-neutral-400">₹74.85 Cr</span>
+        </a>
+        <a href="#market-intelligence" class="mobile-link text-left py-2.5 px-3 rounded-xl hover:bg-white/5 flex items-center justify-between">
+          <span>Market Search</span>
+          <span class="text-[10px] font-mono text-blue-400 bg-blue-500/10 px-2 py-0.5 rounded">Live AI</span>
+        </a>
+        <a href="#location" class="mobile-link text-left py-2.5 px-3 rounded-xl hover:bg-white/5 flex items-center justify-between">
+          <span>Nariman Point HQ</span>
+          <span class="text-xs font-mono text-neutral-400">Mumbai 400021</span>
+        </a>
+        <a href="#contact" class="mobile-link text-left py-2.5 px-3 rounded-xl hover:bg-white/5 flex items-center justify-between">
+          <span>Contact Credit Desk</span>
+          <span class="text-xs text-neutral-400">Direct Desk</span>
+        </a>
+      </nav>
+    </div>
+
+    <div class="pt-6 border-t border-white/10 space-y-3">
+      <a href="tel:09919805234" class="w-full py-3.5 px-4 rounded-xl bg-emerald-500 text-black font-semibold text-sm flex items-center justify-center gap-2">
+        <span>Call Mumbai Desk: 099198 05234</span>
+      </a>
+      <p class="text-[11px] text-neutral-400 text-center font-mono">
+        Official Email: reshma@sekhsaria.com
+      </p>
+    </div>
+  </div>
+
+  <!-- Hero Section -->
+  <main class="relative z-10 pt-32 pb-20 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto flex flex-col justify-center min-h-[85vh]">
+    <!-- Short Capital Tag -->
+    <div class="animate-fade-in-up inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-emerald-500/10 border border-emerald-500/25 text-emerald-400 text-xs sm:text-sm font-medium w-fit mb-6 shadow-sm shimmer-badge">
+      <span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
+      <span class="font-mono">₹74.85 Cr Paid-Up Capital</span>
+      <span class="text-white/30">&bull;</span>
+      <span>Mumbai</span>
+      <span class="text-white/30">&bull;</span>
+      <span>Est. 1995</span>
+    </div>
+
+    <!-- Main Headline -->
+    <h1 class="animate-fade-in-up text-4xl sm:text-5xl lg:text-6xl font-extrabold text-white tracking-tight max-w-4xl leading-[1.12]" style="animation-delay: 120ms;">
+      Commercial Credit &amp; Capital Solutions
+    </h1>
+
+    <!-- Short, Punchy Intro for Users -->
+    <p class="animate-fade-in-up text-neutral-300 text-base sm:text-lg max-w-2xl mt-5 leading-relaxed" style="animation-delay: 220ms;">
+      Structured debt, working capital lines, and flexible growth capital for Indian businesses.
+      Calculate your facility EMI, explore borrowing options, and connect directly with our Mumbai credit desk.
+    </p>
+
+    <!-- Hero Actions -->
+    <div class="animate-fade-in-up flex flex-wrap items-center gap-3 sm:gap-4 mt-8" style="animation-delay: 320ms;">
+      <a href="#calculator" class="px-6 py-3.5 rounded-xl bg-emerald-500 hover:bg-emerald-400 text-black font-semibold text-sm transition-all duration-200 flex items-center gap-2 cursor-pointer shadow-lg hover:shadow-emerald-500/25 hover:-translate-y-0.5 active:translate-y-0">
+        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 7h6m0 10v-3m-3 3h.01M9 17h.01M9 14h.01M12 14h.01M15 11h.01M12 11h.01M9 11h.01M7 21h10a2 2 0 002-2V5a2 2 0 00-2-2H7a2 2 0 00-2 2v14a2 2 0 002 2z"/></svg>
+        <span>Calculate Loan EMI</span>
+      </a>
+
+      <a href="#facilities" class="px-6 py-3.5 rounded-xl bg-white/10 hover:bg-white/15 text-white font-medium text-sm border border-white/15 transition-all duration-200 flex items-center gap-2 cursor-pointer hover:-translate-y-0.5 active:translate-y-0">
+        <span>Explore Facilities</span>
+        <svg class="w-4 h-4 text-neutral-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"/></svg>
+      </a>
+
+      <button id="copyPhoneHeroBtn" class="px-5 py-3.5 rounded-xl bg-white/5 hover:bg-white/10 text-white font-medium text-sm border border-white/10 transition-all duration-200 flex items-center gap-2 cursor-pointer group hover:-translate-y-0.5 active:translate-y-0">
+        <svg class="w-4 h-4 text-emerald-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/></svg>
+        <span class="font-mono" id="heroPhoneText">Desk: 099198 05234</span>
+      </button>
+    </div>
+
+    <!-- 4 High-Trust Institutional Metrics -->
+    <div class="grid grid-cols-2 md:grid-cols-4 gap-4 mt-16 pt-10 border-t border-white/10">
+      <div class="animate-fade-in-up p-4 rounded-xl bg-white/5 border border-white/10 hover:border-emerald-500/40 hover:bg-white/[0.08] hover:-translate-y-1 transition-all duration-300 shadow-sm" style="animation-delay: 420ms;">
+        <span class="text-[11px] uppercase tracking-wider text-neutral-400 font-mono block">Paid-Up Equity</span>
+        <p class="text-2xl sm:text-3xl font-bold text-white font-mono mt-1">₹74.85 Cr</p>
+        <span class="text-xs text-emerald-400 font-medium mt-0.5 block">93.56% of ₹80 Cr Auth</span>
+      </div>
+
+      <div class="animate-fade-in-up p-4 rounded-xl bg-white/5 border border-white/10 hover:border-emerald-500/40 hover:bg-white/[0.08] hover:-translate-y-1 transition-all duration-300 shadow-sm" style="animation-delay: 500ms;">
+        <span class="text-[11px] uppercase tracking-wider text-neutral-400 font-mono block">Track Record</span>
+        <p class="text-2xl sm:text-3xl font-bold text-white font-mono mt-1">30+ Years</p>
+        <span class="text-xs text-neutral-400 mt-0.5 block">Incorporated 26 May 1995</span>
+      </div>
+
+      <div class="animate-fade-in-up p-4 rounded-xl bg-white/5 border border-white/10 hover:border-emerald-500/40 hover:bg-white/[0.08] hover:-translate-y-1 transition-all duration-300 shadow-sm" style="animation-delay: 580ms;">
+        <span class="text-[11px] uppercase tracking-wider text-neutral-400 font-mono block">MCA Registry</span>
+        <p class="text-2xl sm:text-3xl font-bold text-emerald-400 font-mono mt-1">Active</p>
+        <span class="text-xs text-neutral-400 font-mono mt-0.5 block truncate">CIN: U65923MH1995PTC088811</span>
+      </div>
+
+      <div class="animate-fade-in-up p-4 rounded-xl bg-white/5 border border-white/10 hover:border-emerald-500/40 hover:bg-white/[0.08] hover:-translate-y-1 transition-all duration-300 shadow-sm" style="animation-delay: 660ms;">
+        <span class="text-[11px] uppercase tracking-wider text-neutral-400 font-mono block">Headquarters</span>
+        <p class="text-2xl sm:text-3xl font-bold text-white font-mono mt-1">Nariman Pt.</p>
+        <span class="text-xs text-neutral-400 mt-0.5 block">Maker Chambers III, Mumbai</span>
+      </div>
+    </div>
+  </main>
+
+  <!-- Interactive Calculator Section -->
+  <section id="calculator" class="py-20 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto relative z-10 border-t border-white/5">
+    <div class="text-center max-w-3xl mx-auto mb-12">
+      <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-emerald-500/10 border border-emerald-500/20 text-emerald-400 text-xs font-medium mb-3">
+        <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 7h6m0 10v-3m-3 3h.01M9 17h.01M9 14h.01M12 14h.01M15 11h.01M12 11h.01M9 11h.01M7 21h10a2 2 0 002-2V5a2 2 0 00-2-2H7a2 2 0 00-2 2v14a2 2 0 002 2z"/></svg>
+        <span>Interactive Commercial Credit Sizer</span>
+      </div>
+      <h2 class="text-3xl sm:text-4xl font-semibold text-white tracking-tight">
+        Calculate Your Facility &amp; Monthly EMI
+      </h2>
+      <p class="text-neutral-400 text-sm sm:text-base mt-3">
+        Simulate commercial debt, working capital limits, and repayment schedules in Indian Rupees with transparent institutional benchmarks.
+      </p>
+    </div>
+
+    <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
+      <!-- Calculator Inputs -->
+      <div class="lg:col-span-7 bg-neutral-900/80 backdrop-blur-xl border border-white/10 rounded-2xl p-6 sm:p-8 space-y-7 shadow-2xl">
+        <!-- 1. Facility Type -->
+        <div>
+          <label class="block text-xs uppercase tracking-wider text-neutral-400 font-medium mb-3">
+            1. Select Facility Structure
+          </label>
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-3" id="facilitySelector">
+            <button type="button" data-rate="11.5" data-name="Structured Commercial Debt" class="facility-btn active text-left p-3.5 rounded-xl border bg-emerald-950/40 border-emerald-500/60 ring-1 ring-emerald-500/50 shadow-md shadow-emerald-950/50 transition-all duration-200 cursor-pointer">
+              <div class="flex items-center justify-between">
+                <span class="text-sm font-semibold text-white">Structured Commercial Debt</span>
+                <span class="text-[11px] font-mono text-emerald-400 bg-emerald-500/10 px-2 py-0.5 rounded">11.5% p.a.</span>
+              </div>
+              <p class="text-xs text-neutral-400 mt-1 line-clamp-1">Senior and subordinate growth capital for expansion.</p>
+            </button>
+
+            <button type="button" data-rate="10.75" data-name="Working Capital / CC Limit" class="facility-btn text-left p-3.5 rounded-xl border bg-white/5 border-white/10 hover:bg-white/10 hover:border-white/20 transition-all duration-200 cursor-pointer">
+              <div class="flex items-center justify-between">
+                <span class="text-sm font-semibold text-white">Working Capital / CC Limit</span>
+                <span class="text-[11px] font-mono text-emerald-400 bg-emerald-500/10 px-2 py-0.5 rounded">10.75% p.a.</span>
+              </div>
+              <p class="text-xs text-neutral-400 mt-1 line-clamp-1">Revolving line for inventory and cash flow cycles.</p>
+            </button>
+
+            <button type="button" data-rate="11.0" data-name="Capex Term Loan" class="facility-btn text-left p-3.5 rounded-xl border bg-white/5 border-white/10 hover:bg-white/10 hover:border-white/20 transition-all duration-200 cursor-pointer">
+              <div class="flex items-center justify-between">
+                <span class="text-sm font-semibold text-white">Capex Term Loan</span>
+                <span class="text-[11px] font-mono text-emerald-400 bg-emerald-500/10 px-2 py-0.5 rounded">11.0% p.a.</span>
+              </div>
+              <p class="text-xs text-neutral-400 mt-1 line-clamp-1">Long-term financing for plant, machinery, &amp; units.</p>
+            </button>
+
+            <button type="button" data-rate="9.75" data-name="Loan Against Securities" class="facility-btn text-left p-3.5 rounded-xl border bg-white/5 border-white/10 hover:bg-white/10 hover:border-white/20 transition-all duration-200 cursor-pointer">
+              <div class="flex items-center justify-between">
+                <span class="text-sm font-semibold text-white">Loan Against Securities</span>
+                <span class="text-[11px] font-mono text-emerald-400 bg-emerald-500/10 px-2 py-0.5 rounded">9.75% p.a.</span>
+              </div>
+              <p class="text-xs text-neutral-400 mt-1 line-clamp-1">Liquidity backed by listed promoter shares.</p>
+            </button>
+          </div>
+        </div>
+
+        <!-- 2. Amount Slider -->
+        <div class="space-y-3">
+          <div class="flex justify-between items-baseline">
+            <label class="text-xs uppercase tracking-wider text-neutral-400 font-medium">
+              2. Facility Amount Required
+            </label>
+            <div class="text-right">
+              <span id="amountDisplay" class="text-2xl sm:text-3xl font-bold text-white font-mono">₹10</span>
+              <span class="text-emerald-400 text-base font-semibold ml-1.5">Crore</span>
+              <span id="amountLakhs" class="text-xs text-neutral-400 ml-2 font-mono">(₹1,000 Lakhs)</span>
+            </div>
+          </div>
+
+          <input id="amountRange" type="range" min="1" max="50" step="1" value="10" class="w-full h-2 bg-neutral-800 rounded-lg appearance-none cursor-pointer accent-emerald-500" />
+
+          <!-- Amount Presets -->
+          <div class="flex flex-wrap gap-2 pt-1">
+            <button type="button" class="preset-amount-btn text-xs px-2.5 py-1 rounded-md bg-white/5 text-neutral-300 hover:bg-white/10 font-mono transition-all hover:scale-105 active:scale-95 cursor-pointer" data-val="2">₹2 Cr</button>
+            <button type="button" class="preset-amount-btn text-xs px-2.5 py-1 rounded-md bg-white/5 text-neutral-300 hover:bg-white/10 font-mono transition-all hover:scale-105 active:scale-95 cursor-pointer" data-val="5">₹5 Cr</button>
+            <button type="button" class="preset-amount-btn text-xs px-2.5 py-1 rounded-md bg-emerald-500 text-black font-semibold font-mono transition-all hover:scale-105 active:scale-95 cursor-pointer" data-val="10">₹10 Cr</button>
+            <button type="button" class="preset-amount-btn text-xs px-2.5 py-1 rounded-md bg-white/5 text-neutral-300 hover:bg-white/10 font-mono transition-all hover:scale-105 active:scale-95 cursor-pointer" data-val="20">₹20 Cr</button>
+            <button type="button" class="preset-amount-btn text-xs px-2.5 py-1 rounded-md bg-white/5 text-neutral-300 hover:bg-white/10 font-mono transition-all hover:scale-105 active:scale-95 cursor-pointer" data-val="35">₹35 Cr</button>
+            <button type="button" class="preset-amount-btn text-xs px-2.5 py-1 rounded-md bg-white/5 text-neutral-300 hover:bg-white/10 font-mono transition-all hover:scale-105 active:scale-95 cursor-pointer" data-val="50">₹50 Cr</button>
+          </div>
+        </div>
+
+        <!-- 3. Tenor Slider -->
+        <div class="space-y-3">
+          <div class="flex justify-between items-baseline">
+            <label class="text-xs uppercase tracking-wider text-neutral-400 font-medium">
+              3. Facility Tenor
+            </label>
+            <div class="text-right">
+              <span id="tenorDisplay" class="text-2xl sm:text-3xl font-bold text-white font-mono">36</span>
+              <span class="text-neutral-300 text-base font-medium ml-1.5">Months</span>
+              <span id="tenorYears" class="text-xs text-neutral-400 ml-2 font-mono">(3.0 Years)</span>
+            </div>
+          </div>
+
+          <input id="tenorRange" type="range" min="12" max="60" step="6" value="36" class="w-full h-2 bg-neutral-800 rounded-lg appearance-none cursor-pointer accent-emerald-500" />
+
+          <!-- Tenor Presets -->
+          <div class="flex flex-wrap gap-2 pt-1">
+            <button type="button" class="preset-tenor-btn text-xs px-2.5 py-1 rounded-md bg-white/5 text-neutral-300 hover:bg-white/10 font-mono transition-all hover:scale-105 active:scale-95 cursor-pointer" data-val="12">12M (1Y)</button>
+            <button type="button" class="preset-tenor-btn text-xs px-2.5 py-1 rounded-md bg-white/5 text-neutral-300 hover:bg-white/10 font-mono transition-all hover:scale-105 active:scale-95 cursor-pointer" data-val="24">24M (2Y)</button>
+            <button type="button" class="preset-tenor-btn text-xs px-2.5 py-1 rounded-md bg-emerald-500 text-black font-semibold font-mono transition-all hover:scale-105 active:scale-95 cursor-pointer" data-val="36">36M (3Y)</button>
+            <button type="button" class="preset-tenor-btn text-xs px-2.5 py-1 rounded-md bg-white/5 text-neutral-300 hover:bg-white/10 font-mono transition-all hover:scale-105 active:scale-95 cursor-pointer" data-val="48">48M (4Y)</button>
+            <button type="button" class="preset-tenor-btn text-xs px-2.5 py-1 rounded-md bg-white/5 text-neutral-300 hover:bg-white/10 font-mono transition-all hover:scale-105 active:scale-95 cursor-pointer" data-val="60">60M (5Y)</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Output Summary Card -->
+      <div class="lg:col-span-5 space-y-6">
+        <div class="bg-gradient-to-br from-neutral-900 via-neutral-900 to-emerald-950/40 border border-emerald-500/30 hover:border-emerald-500/50 rounded-2xl p-6 sm:p-7 shadow-2xl space-y-6 transition-all duration-300">
+          <div class="flex items-center justify-between border-b border-white/10 pb-4">
+            <div>
+              <span class="text-xs font-mono text-emerald-400 uppercase tracking-widest block">Indicative Repayment</span>
+              <p id="outputFacilityName" class="text-base font-semibold text-white mt-0.5">Structured Commercial Debt</p>
+            </div>
+            <button id="copyCalcSummaryBtn" type="button" class="text-xs text-neutral-400 hover:text-white flex items-center gap-1.5 px-2.5 py-1.5 rounded-lg bg-white/5 hover:bg-white/10 transition-colors cursor-pointer">
+              <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 16H6a2 2 0 01-2-2V6a2 2 0 012-2h8a2 2 0 012 2v2m-6 12h8a2 2 0 002-2v-8a2 2 0 00-2-2h-8a2 2 0 00-2 2v8a2 2 0 002 2z"/></svg>
+              <span>Copy</span>
+            </button>
+          </div>
+
+          <!-- Big Monthly EMI Output -->
+          <div class="p-4 rounded-xl bg-black/40 border border-emerald-500/30 text-center shadow-[0_0_25px_rgba(16,185,129,0.12)]">
+            <span class="text-xs uppercase tracking-wider text-neutral-400">Estimated Monthly Outflow</span>
+            <div class="mt-1 flex items-baseline justify-center gap-1">
+              <span id="outputEmi" class="text-3xl sm:text-4xl font-extrabold text-emerald-400 font-mono tracking-tight">₹32.98</span>
+              <span class="text-sm font-semibold text-white">Lakh / month</span>
+            </div>
+            <span id="outputQuarterly" class="text-[11px] text-neutral-500 mt-1 block font-mono">Quarterly Servicing: ~₹98.94 Lakh</span>
+          </div>
+
+          <!-- Metrics Breakdown Grid -->
+          <div class="grid grid-cols-2 gap-3 text-sm">
+            <div class="p-3 rounded-xl bg-white/5 border border-white/5">
+              <span class="text-[11px] text-neutral-400 block">Total Interest</span>
+              <span id="outputTotalInterest" class="text-base font-semibold text-white font-mono mt-0.5 block">₹1.87 Cr</span>
+            </div>
+            <div class="p-3 rounded-xl bg-white/5 border border-white/5">
+              <span class="text-[11px] text-neutral-400 block">Total Outflow</span>
+              <span id="outputTotalOutflow" class="text-base font-semibold text-white font-mono mt-0.5 block">₹11.87 Cr</span>
+            </div>
+            <div class="p-3 rounded-xl bg-white/5 border border-white/5">
+              <span class="text-[11px] text-neutral-400 block">Benchmark Rate</span>
+              <span id="outputRate" class="text-base font-semibold text-emerald-400 font-mono mt-0.5 block">11.5% p.a.</span>
+            </div>
+            <div class="p-3 rounded-xl bg-white/5 border border-white/5">
+              <span class="text-[11px] text-neutral-400 block">Amortisation</span>
+              <span class="text-base font-semibold text-white font-mono mt-0.5 block">Monthly Reducing</span>
+            </div>
+          </div>
+
+          <!-- Fast Inquiry Form -->
+          <form id="calcInquiryForm" class="space-y-3 pt-2">
+            <textarea id="calcNotes" placeholder="Optional: Enter purpose, company name, or city (e.g. Pune manufacturing expansion)" rows="2" class="w-full text-xs bg-black/60 border border-white/10 rounded-xl p-3 text-white placeholder-neutral-500 focus:outline-none focus:border-emerald-500 resize-none"></textarea>
+            <button type="submit" class="w-full py-3.5 px-4 rounded-xl bg-emerald-500 hover:bg-emerald-400 text-black font-semibold text-sm transition-all duration-200 flex items-center justify-center gap-2 cursor-pointer shadow-lg hover:shadow-emerald-500/20 active:scale-[0.99]">
+              <span>Submit &amp; Connect with Credit Team</span>
+            </button>
+            <div id="calcInquiryMsg" class="hidden p-3 rounded-xl bg-emerald-950/60 border border-emerald-500/40 text-emerald-300 text-xs flex items-center gap-2">
+              <svg class="w-4 h-4 text-emerald-400 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>
+              <span>Your inquiry has been logged! Our team will contact you.</span>
+            </div>
+            <p class="text-[11px] text-neutral-500 text-center">Non-binding indicative estimate. Subject to credit underwriting &amp; KYC verification.</p>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Commercial Credit Facilities -->
+  <section id="facilities" class="py-20 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto relative z-10 border-t border-white/5">
+    <div class="text-center max-w-3xl mx-auto mb-16">
+      <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-blue-500/10 border border-blue-500/20 text-blue-400 text-xs font-medium mb-3">
+        <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 13.255A23.931 23.931 0 0112 15c-3.183 0-6.22-.62-9-1.745M16 6V4a2 2 0 00-2-2h-4a2 2 0 00-2 2v2m4 6h.01M5 20h14a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>
+        <span>Credit Intermediation &bull; NIC 6592</span>
+      </div>
+      <h2 class="text-3xl sm:text-4xl font-semibold text-white tracking-tight">Commercial Credit Facilities</h2>
+      <p class="text-neutral-400 text-sm sm:text-base mt-3">
+        Flexible, transparent debt solutions structured for Indian enterprises, manufacturers, contractors, and growing businesses.
+      </p>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-6 lg:gap-8">
+      <!-- Facility 1 -->
+      <div class="group bg-neutral-900/60 backdrop-blur-md border border-white/10 hover:border-emerald-500/50 rounded-2xl p-6 sm:p-8 transition-all duration-300 flex flex-col justify-between hover:shadow-2xl hover:shadow-emerald-950/30 hover:-translate-y-1.5">
+        <div>
+          <div class="flex items-center justify-between mb-4">
+            <span class="text-[11px] font-mono uppercase tracking-wider text-emerald-400 bg-emerald-500/10 px-2.5 py-1 rounded-full border border-emerald-500/20">Operational Liquidity</span>
+            <span class="text-xs text-neutral-400 font-mono">NIC 6592</span>
+          </div>
+          <h3 class="text-xl font-bold text-white group-hover:text-emerald-300 transition-colors">Working Capital &amp; Cash Credit Lines</h3>
+          <p class="text-xs sm:text-sm text-neutral-400 mt-2.5 leading-relaxed">
+            Seamless revolving lines designed to finance inventory holding cycles, vendor payouts, and day-to-day trade obligations without straining core equity.
+          </p>
+          <div class="grid grid-cols-2 gap-3 my-5 p-3.5 rounded-xl bg-black/40 border border-white/5 text-xs">
+            <div><span class="text-neutral-500 block text-[11px]">Ticket Size</span><span class="text-white font-semibold font-mono">₹1 Cr – ₹25 Cr</span></div>
+            <div><span class="text-neutral-500 block text-[11px]">Typical Tenor</span><span class="text-white font-semibold font-mono">12 – 36 Months</span></div>
+            <div class="col-span-2 pt-1 border-t border-white/5"><span class="text-neutral-500 block text-[11px]">Security / Collateral</span><span class="text-neutral-300">Current Assets / Book Debts / Corporate Guarantee</span></div>
+          </div>
+          <ul class="space-y-2 mb-6">
+            <li class="flex items-start gap-2 text-xs text-neutral-300"><svg class="w-3.5 h-3.5 text-emerald-400 shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>Sub-limits for Letter of Credit (LC) &amp; Bank Guarantees (BG)</li>
+            <li class="flex items-start gap-2 text-xs text-neutral-300"><svg class="w-3.5 h-3.5 text-emerald-400 shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>Interest charged exclusively on utilized balance</li>
+          </ul>
+        </div>
+        <a href="#calculator" class="w-full py-2.5 px-4 rounded-xl bg-white/5 hover:bg-emerald-500 hover:text-black text-white text-xs font-semibold border border-white/10 transition-all duration-200 flex items-center justify-center gap-2 group/btn">
+          <span>Model This Facility in Calculator</span>
+          <svg class="w-3.5 h-3.5 group-hover/btn:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"/></svg>
+        </a>
+      </div>
+
+      <!-- Facility 2 -->
+      <div class="group bg-neutral-900/60 backdrop-blur-md border border-white/10 hover:border-emerald-500/50 rounded-2xl p-6 sm:p-8 transition-all duration-300 flex flex-col justify-between hover:shadow-2xl hover:shadow-emerald-950/30 hover:-translate-y-1.5">
+        <div>
+          <div class="flex items-center justify-between mb-4">
+            <span class="text-[11px] font-mono uppercase tracking-wider text-emerald-400 bg-emerald-500/10 px-2.5 py-1 rounded-full border border-emerald-500/20">Growth Capital</span>
+            <span class="text-xs text-neutral-400 font-mono">NIC 6592</span>
+          </div>
+          <h3 class="text-xl font-bold text-white group-hover:text-emerald-300 transition-colors">Structured Commercial Debt</h3>
+          <p class="text-xs sm:text-sm text-neutral-400 mt-2.5 leading-relaxed">
+            Custom-tailored medium to long-term amortized debt structures for mid-market corporate expansion, acquisitions, and strategic capacity scaling.
+          </p>
+          <div class="grid grid-cols-2 gap-3 my-5 p-3.5 rounded-xl bg-black/40 border border-white/5 text-xs">
+            <div><span class="text-neutral-500 block text-[11px]">Ticket Size</span><span class="text-white font-semibold font-mono">₹5 Cr – ₹50 Cr</span></div>
+            <div><span class="text-neutral-500 block text-[11px]">Typical Tenor</span><span class="text-white font-semibold font-mono">24 – 60 Months</span></div>
+            <div class="col-span-2 pt-1 border-t border-white/5"><span class="text-neutral-500 block text-[11px]">Security / Collateral</span><span class="text-neutral-300">Fixed Charge on Assets / Cash Flow Escrow</span></div>
+          </div>
+          <ul class="space-y-2 mb-6">
+            <li class="flex items-start gap-2 text-xs text-neutral-300"><svg class="w-3.5 h-3.5 text-emerald-400 shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>Bespoke amortisation schedules mapped to cash flows</li>
+            <li class="flex items-start gap-2 text-xs text-neutral-300"><svg class="w-3.5 h-3.5 text-emerald-400 shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>Single-window underwriting from Nariman Point desk</li>
+          </ul>
+        </div>
+        <a href="#calculator" class="w-full py-2.5 px-4 rounded-xl bg-white/5 hover:bg-emerald-500 hover:text-black text-white text-xs font-semibold border border-white/10 transition-all duration-200 flex items-center justify-center gap-2 group/btn">
+          <span>Model This Facility in Calculator</span>
+          <svg class="w-3.5 h-3.5 group-hover/btn:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"/></svg>
+        </a>
+      </div>
+
+      <!-- Facility 3 -->
+      <div class="group bg-neutral-900/60 backdrop-blur-md border border-white/10 hover:border-emerald-500/50 rounded-2xl p-6 sm:p-8 transition-all duration-300 flex flex-col justify-between hover:shadow-2xl hover:shadow-emerald-950/30 hover:-translate-y-1.5">
+        <div>
+          <div class="flex items-center justify-between mb-4">
+            <span class="text-[11px] font-mono uppercase tracking-wider text-emerald-400 bg-emerald-500/10 px-2.5 py-1 rounded-full border border-emerald-500/20">Infrastructure &amp; Capex</span>
+            <span class="text-xs text-neutral-400 font-mono">NIC 6592</span>
+          </div>
+          <h3 class="text-xl font-bold text-white group-hover:text-emerald-300 transition-colors">Asset &amp; Capex Term Loans</h3>
+          <p class="text-xs sm:text-sm text-neutral-400 mt-2.5 leading-relaxed">
+            Long-term capital expenditure financing for modernizing machinery, manufacturing plant expansion, logistics fleet, and industrial workspaces.
+          </p>
+          <div class="grid grid-cols-2 gap-3 my-5 p-3.5 rounded-xl bg-black/40 border border-white/5 text-xs">
+            <div><span class="text-neutral-500 block text-[11px]">Ticket Size</span><span class="text-white font-semibold font-mono">₹2 Cr – ₹35 Cr</span></div>
+            <div><span class="text-neutral-500 block text-[11px]">Typical Tenor</span><span class="text-white font-semibold font-mono">36 – 84 Months</span></div>
+            <div class="col-span-2 pt-1 border-t border-white/5"><span class="text-neutral-500 block text-[11px]">Security / Collateral</span><span class="text-neutral-300">Hypothecation of Plant, Machinery, or Units</span></div>
+          </div>
+          <ul class="space-y-2 mb-6">
+            <li class="flex items-start gap-2 text-xs text-neutral-300"><svg class="w-3.5 h-3.5 text-emerald-400 shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>Competitive benchmark floating or fixed rate structures</li>
+            <li class="flex items-start gap-2 text-xs text-neutral-300"><svg class="w-3.5 h-3.5 text-emerald-400 shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>High LTV on verified commercial equipment</li>
+          </ul>
+        </div>
+        <a href="#calculator" class="w-full py-2.5 px-4 rounded-xl bg-white/5 hover:bg-emerald-500 hover:text-black text-white text-xs font-semibold border border-white/10 transition-all duration-200 flex items-center justify-center gap-2 group/btn">
+          <span>Model This Facility in Calculator</span>
+          <svg class="w-3.5 h-3.5 group-hover/btn:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"/></svg>
+        </a>
+      </div>
+
+      <!-- Facility 4 -->
+      <div class="group bg-neutral-900/60 backdrop-blur-md border border-white/10 hover:border-emerald-500/50 rounded-2xl p-6 sm:p-8 transition-all duration-300 flex flex-col justify-between hover:shadow-2xl hover:shadow-emerald-950/30 hover:-translate-y-1.5">
+        <div>
+          <div class="flex items-center justify-between mb-4">
+            <span class="text-[11px] font-mono uppercase tracking-wider text-emerald-400 bg-emerald-500/10 px-2.5 py-1 rounded-full border border-emerald-500/20">Fast Turnaround</span>
+            <span class="text-xs text-neutral-400 font-mono">NIC 6592</span>
+          </div>
+          <h3 class="text-xl font-bold text-white group-hover:text-emerald-300 transition-colors">Promoter &amp; Securities Liquidity</h3>
+          <p class="text-xs sm:text-sm text-neutral-400 mt-2.5 leading-relaxed">
+            Rapid-turnaround liquidity credit against promoter shareholdings, mutual fund holdings, and institutional paper to bridge immediate financing gaps.
+          </p>
+          <div class="grid grid-cols-2 gap-3 my-5 p-3.5 rounded-xl bg-black/40 border border-white/5 text-xs">
+            <div><span class="text-neutral-500 block text-[11px]">Ticket Size</span><span class="text-white font-semibold font-mono">₹1 Cr – ₹20 Cr</span></div>
+            <div><span class="text-neutral-500 block text-[11px]">Typical Tenor</span><span class="text-white font-semibold font-mono">6 – 24 Months</span></div>
+            <div class="col-span-2 pt-1 border-t border-white/5"><span class="text-neutral-500 block text-[11px]">Security / Collateral</span><span class="text-neutral-300">Listed / Unlisted Securities, Financial Instruments</span></div>
+          </div>
+          <ul class="space-y-2 mb-6">
+            <li class="flex items-start gap-2 text-xs text-neutral-300"><svg class="w-3.5 h-3.5 text-emerald-400 shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>Fast disbursal upon custody lien verification</li>
+            <li class="flex items-start gap-2 text-xs text-neutral-300"><svg class="w-3.5 h-3.5 text-emerald-400 shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>Zero prepayment penalties on bullet repayment</li>
+          </ul>
+        </div>
+        <a href="#calculator" class="w-full py-2.5 px-4 rounded-xl bg-white/5 hover:bg-emerald-500 hover:text-black text-white text-xs font-semibold border border-white/10 transition-all duration-200 flex items-center justify-center gap-2 group/btn">
+          <span>Model This Facility in Calculator</span>
+          <svg class="w-3.5 h-3.5 group-hover/btn:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"/></svg>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Capital Structure & Governance -->
+  <section id="capital" class="py-20 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto relative z-10 border-t border-white/5">
+    <div class="text-center max-w-3xl mx-auto mb-12">
+      <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-amber-500/10 border border-amber-500/20 text-amber-400 text-xs font-medium mb-3">
+        <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"/></svg>
+        <span>Statutory &amp; Institutional Solvency</span>
+      </div>
+      <h2 class="text-3xl sm:text-4xl font-semibold text-white tracking-tight">Capital Structure &amp; Governance</h2>
+      <p class="text-neutral-400 text-sm sm:text-base mt-3">
+        Backed by a ₹74.85 Crore paid-up equity base, 30-year operating heritage, and an experienced 8-member governing board registered with RoC-Mumbai.
+      </p>
+
+      <!-- Tabs -->
+      <div class="inline-flex p-1 rounded-xl bg-neutral-900 border border-white/10 mt-6" id="capitalTabs">
+        <button type="button" class="tab-btn active px-4 py-2 rounded-lg text-xs sm:text-sm font-medium transition-all bg-emerald-500 text-black font-semibold shadow-md cursor-pointer" data-tab="capitalSolvency">Capital &amp; Solvency</button>
+        <button type="button" class="tab-btn px-4 py-2 rounded-lg text-xs sm:text-sm font-medium transition-all text-neutral-400 hover:text-white cursor-pointer" data-tab="boardMembers">Board of Directors (8)</button>
+        <button type="button" class="tab-btn px-4 py-2 rounded-lg text-xs sm:text-sm font-medium transition-all text-neutral-400 hover:text-white cursor-pointer" data-tab="mcaRecord">MCA &amp; Statutory Registry</button>
+      </div>
+    </div>
+
+    <!-- Tab 1: Capital Solvency -->
+    <div id="capitalSolvency" class="tab-content space-y-6 max-w-5xl mx-auto">
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-5">
+        <div class="bg-neutral-900/80 border border-white/10 hover:border-white/20 hover:-translate-y-1 rounded-2xl p-6 relative overflow-hidden transition-all duration-300">
+          <span class="text-[11px] uppercase tracking-wider text-neutral-400 block font-mono">Authorized Share Capital</span>
+          <p class="text-3xl font-bold text-white font-mono mt-2">₹80 Crore</p>
+          <p class="text-xs text-neutral-500 font-mono mt-1">₹80,00,00,000</p>
+          <span class="text-[11px] text-neutral-400 mt-3 block">Total equity registered with RoC-Mumbai</span>
+        </div>
+
+        <div class="bg-gradient-to-br from-neutral-900 via-neutral-900 to-emerald-950/40 border border-emerald-500/40 hover:border-emerald-500/60 hover:-translate-y-1 rounded-2xl p-6 relative overflow-hidden transition-all duration-300 shadow-lg shadow-emerald-950/20">
+          <span class="text-[11px] uppercase tracking-wider text-emerald-400 block font-mono">Paid-Up Equity Capital</span>
+          <p class="text-3xl font-bold text-emerald-400 font-mono mt-2">₹74.85 Crore</p>
+          <p class="text-xs text-emerald-300/70 font-mono mt-1">₹74,85,00,000</p>
+          <span class="text-[11px] text-emerald-400/80 mt-3 block font-semibold">93.56% Paid-up Ratio &bull; High Solvency Buffer</span>
+        </div>
+
+        <div class="bg-neutral-900/80 border border-white/10 hover:border-white/20 hover:-translate-y-1 rounded-2xl p-6 relative overflow-hidden transition-all duration-300">
+          <span class="text-[11px] uppercase tracking-wider text-neutral-400 block font-mono">Operating Revenue Bracket</span>
+          <p class="text-2xl font-bold text-white font-mono mt-2">₹100 Cr – ₹500 Cr</p>
+          <p class="text-xs text-neutral-500 mt-1">FY ending March 31, 2026</p>
+          <span class="text-[11px] text-neutral-400 mt-3 block">Audited commercial balance sheet</span>
+        </div>
+      </div>
+
+      <!-- Capitalization Bar -->
+      <div class="bg-neutral-900/80 border border-white/10 rounded-2xl p-6 sm:p-7 space-y-4">
+        <div class="flex flex-wrap items-center justify-between gap-2 text-xs sm:text-sm">
+          <div class="flex items-center gap-2">
+            <span class="w-2.5 h-2.5 rounded-full bg-emerald-400"></span>
+            <span class="text-white font-medium">Paid-up Equity: <strong>₹74.85 Cr (93.56%)</strong></span>
+          </div>
+          <div class="flex items-center gap-2 text-neutral-400">
+            <span class="w-2.5 h-2.5 rounded-full bg-neutral-600"></span>
+            <span>Unissued Equity: ₹5.15 Cr (6.44%)</span>
+          </div>
+        </div>
+        <div class="w-full h-3.5 bg-neutral-800 rounded-full overflow-hidden p-0.5 border border-white/5">
+          <div class="h-full bg-gradient-to-r from-emerald-500 to-teal-400 rounded-full transition-all duration-700" style="width: 93.56%;"></div>
+        </div>
+        <p class="text-xs text-neutral-400 leading-relaxed">
+          With an exceptional paid-up equity capitalization ratio of <strong>93.56%</strong> against an authorized ceiling of ₹80 Crore, Siddhesh Capital maintains a significant proprietary capital cushion to absorb credit cycle volatility and ensure uninterrupted commercial credit disbursals.
+        </p>
+      </div>
+    </div>
+
+    <!-- Tab 2: Board Members -->
+    <div id="boardMembers" class="tab-content hidden space-y-6 max-w-6xl mx-auto">
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
+        <div class="bg-neutral-900/80 border border-white/10 hover:border-emerald-500/40 hover:-translate-y-1 hover:shadow-xl hover:shadow-emerald-950/20 rounded-2xl p-5 transition-all duration-300 flex flex-col justify-between">
+          <div>
+            <div class="flex items-center justify-between mb-3"><span class="text-[10px] uppercase font-mono text-emerald-400 bg-emerald-500/10 px-2 py-0.5 rounded">Active Signatory</span><span class="text-[10px] text-neutral-500 font-mono">Executive</span></div>
+            <h4 class="text-base font-semibold text-white">Darshan Vijay Engineer</h4>
+            <p class="text-xs text-emerald-300/80 font-medium mt-0.5">Managing Director</p>
+            <p class="text-xs text-neutral-400 mt-3 leading-relaxed">Strategic leadership, institutional credit structuring, and executive board governance.</p>
+          </div>
+          <div class="pt-4 mt-4 border-t border-white/5 flex items-center justify-between text-[11px] text-neutral-500 font-mono"><span>Siddhesh Capital</span><span>RoC-Mumbai</span></div>
+        </div>
+
+        <div class="bg-neutral-900/80 border border-white/10 hover:border-emerald-500/40 hover:-translate-y-1 hover:shadow-xl hover:shadow-emerald-950/20 rounded-2xl p-5 transition-all duration-300 flex flex-col justify-between">
+          <div>
+            <div class="flex items-center justify-between mb-3"><span class="text-[10px] uppercase font-mono text-emerald-400 bg-emerald-500/10 px-2 py-0.5 rounded">Active Signatory</span><span class="text-[10px] text-neutral-500 font-mono">Executive</span></div>
+            <h4 class="text-base font-semibold text-white">Nekzad Rohinton Dhunjibhoy</h4>
+            <p class="text-xs text-emerald-300/80 font-medium mt-0.5">Whole-time Director</p>
+            <p class="text-xs text-neutral-400 mt-3 leading-relaxed">Day-to-day operations, capital market transactions, and statutory compliance management.</p>
+          </div>
+          <div class="pt-4 mt-4 border-t border-white/5 flex items-center justify-between text-[11px] text-neutral-500 font-mono"><span>Siddhesh Capital</span><span>RoC-Mumbai</span></div>
+        </div>
+
+        <div class="bg-neutral-900/80 border border-white/10 hover:border-emerald-500/40 hover:-translate-y-1 hover:shadow-xl hover:shadow-emerald-950/20 rounded-2xl p-5 transition-all duration-300 flex flex-col justify-between">
+          <div>
+            <div class="flex items-center justify-between mb-3"><span class="text-[10px] uppercase font-mono text-emerald-400 bg-emerald-500/10 px-2 py-0.5 rounded">Board Member</span><span class="text-[10px] text-neutral-500 font-mono">Board</span></div>
+            <h4 class="text-base font-semibold text-white">Anupam Madan Pareek</h4>
+            <p class="text-xs text-emerald-300/80 font-medium mt-0.5">Director</p>
+            <p class="text-xs text-neutral-400 mt-3 leading-relaxed">Corporate strategy, audit committee review, and financial oversight.</p>
+          </div>
+          <div class="pt-4 mt-4 border-t border-white/5 flex items-center justify-between text-[11px] text-neutral-500 font-mono"><span>Siddhesh Capital</span><span>RoC-Mumbai</span></div>
+        </div>
+
+        <div class="bg-neutral-900/80 border border-white/10 hover:border-emerald-500/40 hover:-translate-y-1 hover:shadow-xl hover:shadow-emerald-950/20 rounded-2xl p-5 transition-all duration-300 flex flex-col justify-between">
+          <div>
+            <div class="flex items-center justify-between mb-3"><span class="text-[10px] uppercase font-mono text-emerald-400 bg-emerald-500/10 px-2 py-0.5 rounded">Key Manager</span><span class="text-[10px] text-neutral-500 font-mono">Secretary</span></div>
+            <h4 class="text-base font-semibold text-white">Neelam Rajendra Gaba</h4>
+            <p class="text-xs text-emerald-300/80 font-medium mt-0.5">Company Secretary</p>
+            <p class="text-xs text-neutral-400 mt-3 leading-relaxed">Statutory filings, ROC correspondence, secretarial compliance, and MCA governance.</p>
+          </div>
+          <div class="pt-4 mt-4 border-t border-white/5 flex items-center justify-between text-[11px] text-neutral-500 font-mono"><span>Siddhesh Capital</span><span>RoC-Mumbai</span></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Tab 3: MCA Registry -->
+    <div id="mcaRecord" class="tab-content hidden max-w-4xl mx-auto bg-neutral-900/80 border border-white/10 rounded-2xl p-6 sm:p-8 space-y-6">
+      <div class="flex flex-wrap items-center justify-between gap-4 border-b border-white/10 pb-5">
+        <div>
+          <span class="text-xs uppercase tracking-wider text-emerald-400 font-mono">Ministry of Corporate Affairs (MCA) Record</span>
+          <h3 class="text-lg sm:text-xl font-bold text-white mt-1">Siddhesh Capital Market Services Private Limited</h3>
+        </div>
+        <span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-emerald-500/20 text-emerald-300 text-xs font-semibold border border-emerald-500/40">
+          <span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
+          Active &bull; Compliant
+        </span>
+      </div>
+
+      <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 text-xs">
+        <div class="p-3.5 rounded-xl bg-black/40 border border-white/5 space-y-1">
+          <span class="text-neutral-500 uppercase tracking-wider text-[10px]">Corporate Identification Number (CIN)</span>
+          <p class="font-mono text-white text-sm font-semibold">U65923MH1995PTC088811</p>
+        </div>
+        <div class="p-3.5 rounded-xl bg-black/40 border border-white/5 space-y-1">
+          <span class="text-neutral-500 uppercase tracking-wider text-[10px]">Registrar of Companies (RoC)</span>
+          <p class="font-mono text-white text-sm font-semibold">RoC-Mumbai (Reg No: 088811)</p>
+        </div>
+        <div class="p-3.5 rounded-xl bg-black/40 border border-white/5 space-y-1">
+          <span class="text-neutral-500 uppercase tracking-wider text-[10px]">Date of Incorporation</span>
+          <p class="text-white text-sm font-semibold">26 May 1995</p>
+        </div>
+        <div class="p-3.5 rounded-xl bg-black/40 border border-white/5 space-y-1">
+          <span class="text-neutral-500 uppercase tracking-wider text-[10px]">Principal Activity</span>
+          <p class="text-white text-sm font-semibold">NIC 6592 — Other credit granting</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Market Intelligence Section -->
+  <section id="market-intelligence" class="py-20 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto relative z-10 border-t border-white/5">
+    <div class="text-center max-w-3xl mx-auto mb-12">
+      <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-blue-500/10 border border-blue-500/20 text-blue-400 text-xs font-medium mb-3">
+        <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"/></svg>
+        <span>Real-Time Google Search Grounding</span>
+      </div>
+      <h2 class="text-3xl sm:text-4xl font-semibold text-white tracking-tight">Live Market &amp; Regulatory Intelligence</h2>
+      <p class="text-neutral-400 text-sm sm:text-base mt-3">
+        Ground your commercial borrowing decisions with real-time interest rate benchmarks, RBI policies, and credit market dynamics powered by Google Search.
+      </p>
+    </div>
+
+    <div class="max-w-4xl mx-auto bg-neutral-900/80 border border-white/10 rounded-2xl p-6 sm:p-8 space-y-6 shadow-2xl">
+      <form id="searchForm" class="flex gap-2">
+        <div class="relative flex-1">
+          <svg class="w-4 h-4 text-neutral-400 absolute left-3.5 top-1/2 -translate-y-1/2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/></svg>
+          <input id="searchQueryInput" type="text" placeholder="Search RBI benchmark rates, commercial credit rules, or lending trends..." class="w-full bg-black/60 border border-white/15 rounded-xl pl-10 pr-4 py-3 text-sm text-white placeholder-neutral-500 focus:outline-none focus:border-blue-500 transition-colors" value="Current RBI repo rate and commercial lending benchmarks India" />
+        </div>
+        <button type="submit" class="px-6 py-3 rounded-xl bg-blue-600 hover:bg-blue-500 text-white font-medium text-sm transition-colors cursor-pointer flex items-center gap-2">
+          <span>Search</span>
+        </button>
+      </form>
+
+      <div id="searchResultArea" class="space-y-4 pt-4 border-t border-white/10">
+        <div class="p-5 rounded-xl bg-black/40 border border-white/5">
+          <span class="text-[11px] font-mono uppercase tracking-wider text-blue-400 block mb-2">Current Benchmark Intelligence</span>
+          <p class="text-sm text-neutral-200 leading-relaxed">
+            The Reserve Bank of India policy repo rate stands firmly anchored at 6.50%. Commercial banks and non-banking financial institutions currently quote structured senior debt at 10.25% to 12.50% p.a., with working capital facilities anchored between 10.50% and 11.75% for verified manufacturing and trading enterprises.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Location & HQ Section -->
+  <section id="location" class="py-20 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto relative z-10 border-t border-white/5">
+    <div class="text-center max-w-3xl mx-auto mb-12">
+      <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-emerald-500/10 border border-emerald-500/20 text-emerald-400 text-xs font-medium mb-3">
+        <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/></svg>
+        <span>Nariman Point Financial District Hub</span>
+      </div>
+      <h2 class="text-3xl sm:text-4xl font-semibold text-white tracking-tight">Headquarters &amp; Spatial Verification</h2>
+      <p class="text-neutral-400 text-sm sm:text-base mt-3">
+        Strategically situated in Mumbai&apos;s premier legacy financial center at Nariman Point, minutes from major commercial banks and the Reserve Bank of India.
+      </p>
+    </div>
+
+    <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
+      <div class="lg:col-span-6 bg-neutral-900/80 border border-white/10 rounded-2xl p-6 sm:p-8 space-y-6">
+        <div>
+          <span class="text-xs uppercase tracking-wider text-emerald-400 font-mono">Corporate Headquarters</span>
+          <h3 class="text-lg font-bold text-white mt-0.5">Maker Chambers III, Nariman Point</h3>
+          <p class="text-sm text-neutral-300 mt-2 leading-relaxed">
+            122, Maker Chambers III, Nariman Point, Mumbai, Maharashtra, India, 400021.
+          </p>
+        </div>
+
+        <div class="space-y-3 pt-4 border-t border-white/10 text-xs">
+          <h4 class="font-semibold text-white uppercase tracking-wider text-[11px] font-mono">Key Proximities:</h4>
+          <div class="grid grid-cols-2 gap-3">
+            <div class="p-3 rounded-xl bg-black/40 border border-white/5"><span class="text-neutral-400 block text-[11px]">Commercial Banks</span><span class="text-white font-medium">SBI, HDFC, ICICI Towers</span></div>
+            <div class="p-3 rounded-xl bg-black/40 border border-white/5"><span class="text-neutral-400 block text-[11px]">Central Banking</span><span class="text-white font-medium">Reserve Bank of India ~2.2 km</span></div>
+            <div class="p-3 rounded-xl bg-black/40 border border-white/5"><span class="text-neutral-400 block text-[11px]">Transit Hub</span><span class="text-white font-medium">Churchgate &amp; Aqua Line Metro</span></div>
+            <div class="p-3 rounded-xl bg-black/40 border border-white/5"><span class="text-neutral-400 block text-[11px]">Promenade</span><span class="text-white font-medium">Marine Drive Waterfront</span></div>
+          </div>
+        </div>
+
+        <a href="https://www.google.com/maps/search/?api=1&query=122+Maker+Chambers+III+Nariman+Point+Mumbai+400021" target="_blank" rel="noopener noreferrer" class="py-2.5 px-4 rounded-xl bg-emerald-500 hover:bg-emerald-400 text-black font-semibold text-xs transition-colors inline-flex items-center gap-2 cursor-pointer shadow-lg">
+          <span>Open in Google Maps</span>
+          <svg class="w-3.5 h-3.5 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/></svg>
+        </a>
+      </div>
+
+      <div class="lg:col-span-6 bg-neutral-900/80 border border-white/10 rounded-2xl p-6 sm:p-8 space-y-5">
+        <span class="text-xs uppercase tracking-wider text-neutral-400 font-mono block border-b border-white/10 pb-4">Spatial Verification Summary</span>
+        <div class="text-xs sm:text-sm text-neutral-200 leading-relaxed bg-black/40 p-4 rounded-xl border border-white/5 space-y-2">
+          <p>
+            122, Maker Chambers III is an established financial address located on Jamnalal Bajaj Road, Nariman Point. The building houses premier institutional credit, corporate investment, and fiduciary advisory offices.
+          </p>
+          <p class="text-neutral-400 text-xs">
+            Directly accessible from Churchgate Terminus (West line) and the Aqua Line 3 underground metro station at Vidhan Bhavan.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact & Consultation Desk -->
+  <section id="contact" class="py-20 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto relative z-10 border-t border-white/5">
+    <div class="text-center max-w-3xl mx-auto mb-16">
+      <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-emerald-500/10 border border-emerald-500/20 text-emerald-400 text-xs font-medium mb-3">
+        <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/></svg>
+        <span>Mumbai Commercial Credit Desk</span>
+      </div>
+      <h2 class="text-3xl sm:text-4xl font-semibold text-white tracking-tight">Connect with Our Team</h2>
+      <p class="text-neutral-400 text-sm sm:text-base mt-3">
+        Direct dialogue with our executive credit underwriters at Nariman Point.
+      </p>
+    </div>
+
+    <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
+      <div class="lg:col-span-5 bg-neutral-900/80 border border-white/10 rounded-2xl p-6 sm:p-7 space-y-6">
+        <h3 class="text-lg font-bold text-white">Registered Headquarters</h3>
+        <div class="space-y-4 text-xs">
+          <div>
+            <span class="text-neutral-400 font-mono block text-[10px] uppercase">Address</span>
+            <p class="text-neutral-200 mt-0.5">122, Maker Chambers III, Nariman Point, Mumbai, Maharashtra 400021, India</p>
+          </div>
+          <div class="pt-3 border-t border-white/10">
+            <span class="text-neutral-400 font-mono block text-[10px] uppercase">Phone</span>
+            <a href="tel:09919805234" class="text-white hover:text-emerald-400 font-mono font-bold text-sm">099198 05234</a>
+          </div>
+          <div class="pt-3 border-t border-white/10">
+            <span class="text-neutral-400 font-mono block text-[10px] uppercase">Email</span>
+            <a href="mailto:reshma@sekhsaria.com" class="text-white hover:text-emerald-400 font-mono text-sm">reshma@sekhsaria.com</a>
+          </div>
+          <div class="pt-3 border-t border-white/10">
+            <span class="text-neutral-400 font-mono block text-[10px] uppercase">Corporate ID</span>
+            <span class="text-white font-mono">CIN: U65923MH1995PTC088811</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="lg:col-span-7 bg-neutral-900/80 border border-white/10 rounded-2xl p-6 sm:p-8 shadow-2xl">
+        <h3 class="text-lg font-bold text-white mb-2">Request Facility Consultation</h3>
+        <form id="contactForm" class="space-y-4">
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+            <div>
+              <label class="block text-xs uppercase text-neutral-400 mb-1">Your Full Name *</label>
+              <input type="text" required placeholder="e.g. Rajesh Sharma" class="w-full bg-black/60 border border-white/15 rounded-xl px-3.5 py-2.5 text-sm text-white focus:outline-none focus:border-emerald-500" />
+            </div>
+            <div>
+              <label class="block text-xs uppercase text-neutral-400 mb-1">Company / Entity Name *</label>
+              <input type="text" required placeholder="e.g. Apex Industries Pvt Ltd" class="w-full bg-black/60 border border-white/15 rounded-xl px-3.5 py-2.5 text-sm text-white focus:outline-none focus:border-emerald-500" />
+            </div>
+          </div>
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+            <div>
+              <label class="block text-xs uppercase text-neutral-400 mb-1">Mobile Number *</label>
+              <input type="tel" required placeholder="+91 98765 43210" class="w-full bg-black/60 border border-white/15 rounded-xl px-3.5 py-2.5 text-sm text-white font-mono focus:outline-none focus:border-emerald-500" />
+            </div>
+            <div>
+              <label class="block text-xs uppercase text-neutral-400 mb-1">Official Email Address *</label>
+              <input type="email" required placeholder="name@company.com" class="w-full bg-black/60 border border-white/15 rounded-xl px-3.5 py-2.5 text-sm text-white focus:outline-none focus:border-emerald-500" />
+            </div>
+          </div>
+          <div>
+            <label class="block text-xs uppercase text-neutral-400 mb-1">Business Details &amp; Objectives</label>
+            <textarea rows="3" placeholder="Briefly state your requirement..." class="w-full bg-black/60 border border-white/15 rounded-xl px-3.5 py-2.5 text-sm text-white focus:outline-none focus:border-emerald-500 resize-none"></textarea>
+          </div>
+          <button type="submit" class="w-full py-3.5 px-4 rounded-xl bg-emerald-500 hover:bg-emerald-400 text-black font-semibold text-sm transition-all duration-200 cursor-pointer shadow-lg">
+            <span>Submit Consultation Request</span>
+          </button>
+          <div id="contactFormMsg" class="hidden p-4 rounded-xl bg-emerald-950/60 border border-emerald-500/40 text-emerald-300 text-xs">
+            Thank you! Your consultation request has been received. Our credit team will contact you promptly.
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- Statutory Footer -->
+  <footer class="bg-neutral-950 border-t border-white/10 text-neutral-400 text-xs py-14 px-4 sm:px-6 lg:px-8 relative z-10">
+    <div class="max-w-7xl mx-auto space-y-12">
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div class="space-y-3">
+          <div class="flex items-center gap-2 text-white font-bold text-lg">
+            <span>SIDDHESH CAPITAL</span>
+            <span class="text-amber-400">&#10035;&#xFE0E;</span>
+          </div>
+          <p class="text-xs text-neutral-400 leading-relaxed">
+            Siddhesh Capital Market Services Private Limited is an Indian credit intermediation firm incorporated on 26 May 1995. Registered with RoC-Mumbai under CIN <span class="text-white font-mono">U65923MH1995PTC088811</span>.
+          </p>
+          <span class="inline-block px-3 py-1 rounded-full bg-emerald-500/10 text-emerald-400 font-mono text-[11px] border border-emerald-500/20">
+            ₹74.85 Cr Paid-Up Equity Base
+          </span>
+        </div>
+
+        <div class="space-y-3">
+          <h4 class="text-xs font-semibold text-white uppercase tracking-wider font-mono">Credit Facilities</h4>
+          <ul class="space-y-2">
+            <li><a href="#facilities" class="hover:text-emerald-400">Working Capital &amp; CC Lines</a></li>
+            <li><a href="#facilities" class="hover:text-emerald-400">Structured Commercial Debt</a></li>
+            <li><a href="#facilities" class="hover:text-emerald-400">Capex Term Loans</a></li>
+            <li><a href="#facilities" class="hover:text-emerald-400">Securities Financing</a></li>
+          </ul>
+        </div>
+
+        <div class="space-y-3">
+          <h4 class="text-xs font-semibold text-white uppercase tracking-wider font-mono">Governance</h4>
+          <ul class="space-y-2">
+            <li><a href="#capital" class="hover:text-emerald-400">Capital Structure (₹80 Cr Auth)</a></li>
+            <li><a href="#capital" class="hover:text-emerald-400">Board of Directors (8 Members)</a></li>
+            <li><a href="#capital" class="hover:text-emerald-400">RoC-Mumbai Registry Record</a></li>
+            <li><a href="#market-intelligence" class="hover:text-blue-400">Live Market Intelligence</a></li>
+          </ul>
+        </div>
+
+        <div class="space-y-3">
+          <h4 class="text-xs font-semibold text-white uppercase tracking-wider font-mono">Mumbai Credit Desk</h4>
+          <p class="text-xs text-neutral-300">122, Maker Chambers III, Nariman Point, Mumbai 400021</p>
+          <p class="font-mono text-white">Call: 099198 05234</p>
+          <p class="font-mono text-neutral-400">reshma@sekhsaria.com</p>
+        </div>
+      </div>
+
+      <div class="pt-8 border-t border-white/10 flex flex-col sm:flex-row items-center justify-between gap-4 text-[11px] text-neutral-500">
+        <p>&copy; 1995 – 2026 Siddhesh Capital Market Services Private Limited. All rights reserved.</p>
+        <p class="font-mono text-neutral-400">CIN: U65923MH1995PTC088811 &bull; NIC Code: 6592</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Toast Notification -->
+  <div id="toast" class="fixed bottom-8 right-8 z-50 bg-white text-black px-4 py-2.5 rounded-full text-xs sm:text-sm font-medium shadow-2xl flex items-center gap-2 hidden transition-all duration-300">
+    <svg class="w-4 h-4 text-emerald-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>
+    <span id="toastMsg">Copied to clipboard</span>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
